@@ -139,6 +139,10 @@ Listen 80
 Include mod.d/*.load
 Include conf.d/*.conf
 
+<IfModule mod_ssl.c>
+    Listen 443
+</IfModule>
+
 #
 # ExtendedStatus controls whether Apache will generate "full" status
 # information (ExtendedStatus On) or just basic information (ExtendedStatus
